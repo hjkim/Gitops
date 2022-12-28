@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('Deploy start') {
+    stage('Deploy start-') {
       steps {
         slackSend(message: "Deploy ${env.BUILD_NUMBER} Started"
         , color: 'good', tokenCredentialId: 'slack-key')
